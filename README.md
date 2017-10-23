@@ -36,10 +36,6 @@ python manage.py runserver
 ```
 
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [Django](https://www.djangoproject.com/) - The back-end web framework used

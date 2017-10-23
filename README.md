@@ -7,7 +7,7 @@ selected games with greater spotlight. Utilizes the
 DjangoRestFramework to transform the Django database into Angular
 accessible JSON format.
 
-To locally host this website:
+** To locally host this website:**
 This project is written using Angular CLI version 1.49 and Django version 1.11, so it is recommended to download these versions. 
 In the client directory, type:
 

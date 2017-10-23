@@ -1,5 +1,3 @@
-# ChessDataStudy
-
 
 # ChessDataStudy
 

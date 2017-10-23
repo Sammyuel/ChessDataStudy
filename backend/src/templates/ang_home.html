@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% block content %}
+<body>
+  <div id="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+          <div class="item active">
+
+              <div class="slide1"> </div>
+          </div>
+          <div class="item">
+              <div class="slide2"></div>
+          </div>
+          <div class="item">
+              <div class="slide3"></div>
+          </div>
+
+      </div><!-- .carousel-inner --> 
+      <div class = "container" style="border:10px solid #cecece">
+        <div class="container carousel-overlay text-center">
+            <div class = "row">
+              <div class = "col-md-4">
+                <script src="https://lichess.org/tv/embed?theme=auto&bg=auto"></script>
+              </div>
+              <div class = "col-md-4">
+                <h1>Chess Study Database</h1>
+                <span class="glyphicon glyphicon-tower"></span>
+                <span class="glyphicon glyphicon-king"></span>
+                <span class="glyphicon glyphicon-queen"></span>
+                <span class="glyphicon glyphicon-pawn"></span>
+                <span class="glyphicon glyphicon-bishop"></span>
+                <span class="glyphicon glyphicon-knight"></span>
+                <p class="lead">Keep track of games you've studied by saving them!</p>
+                <span class="glyphicon glyphicon-tower"></span>
+                <span class="glyphicon glyphicon-king"></span>
+                <span class="glyphicon glyphicon-queen"></span>
+                <span class="glyphicon glyphicon-pawn"></span>
+                <span class="glyphicon glyphicon-bishop"></span>
+                <span class="glyphicon glyphicon-knight"></span>
+              </div>
+              <div class = "col-md-4">
+                <script src="https://lichess.org/training/embed?theme=auto&bg=auto"></script>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div><!-- .carousel --> 
+
+
+</body>
+
+<style>
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbar-default.transparent {
+    background-color: transparent;
+}
+.slide1, .slide2, .slide3 {
+    min-height: 560px;
+    background-size: cover;
+    background-position: center center;
+}
+.slide1 {
+  
+    background-image: url("http://www.hdwallpaper.nu/wp-content/uploads/2017/03/chess-22.jpg");
+}
+.slide2 {
+    background-image: url("https://i.pinimg.com/736x/98/7b/0b/987b0b6fcc6987ada88a448b2ddbe10a--cool-wallpaper-chess.jpg");
+}
+.slide3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShNofNIAo3uAcXAKJOYITaqRQgGi6-39QFUE8YeHclL8hBYN_x");
+}
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    opacity: .5;
+}
+.carousel.carousel-fade .active.item {
+    opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+}
+
+</style>
+{% endblock %}
+
+
+
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Chess Database</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <!-- index.html -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="{% static 'ang/styles.bundle.css' %}" rel="stylesheet"/></head>
+<body>
+  <app-root>Loading...</app-root>
+    <script type="text/javascript" src="{% static 'ang/inline.bundle.js' %}"></script>
+    <script type="text/javascript" src="{% static 'ang/polyfills.bundle.js' %}"></script>
+    <script type="text/javascript" src="{% static 'ang/vendor.bundle.js' %}"></script>
+    <script type="text/javascript" src="{% static 'ang/main.bundle.js' %}"></script>
+</body>
+</html>
+ 
+
+

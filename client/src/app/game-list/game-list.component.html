@@ -1,0 +1,58 @@
+
+<body>
+	<div class="col-md-5">
+	    <div class="container" >
+	        <div class="panel panel-default" >
+	            <div class = "panel-heading"> Professional Games </div>
+	            <div class = "panel-body" >
+	                <table class= "table table-striped table-bordered table-hover">
+	                    <thead>
+	                        <tr >
+	                        <th>Information </th>
+	                        <th>Player 1</th>
+	                        <th>Player 2</th>
+	                        <th> PGN </th>  
+	                        <th> Video </th>
+	                        </tr>
+	                    </thead>
+	                    <tbody data-link="row" class = "rowlink">
+	                    	<tr *ngFor='let game of gameList'> 
+	                    		 <td > {{game.information}}
+	                    		 <span class="glyphicon glyphicon-queen gi-3x" (click)="onChange(game)"> </span>
+
+	                    		 </td>
+	                             <td>{{game.player_1}} </td>
+	                             <td>{{game.player_2}}</td>
+	                             <td routerLink='/games/{{game.unique}}' routerLinkActive="active">
+	                             	{{game.pgn}}
+	                             
+	                             </td>
+	                             <td *ngIf= 'game.clicked; else falsyTemplate'> 
+	                             	<span class="glyphicon glyphicon-remove" (click)="onClicked(game)"> </span>
+                             		<iframe [src]="getEmbedUrl(game) | safe" width="300" height="250" frameborder="0" allowfullscreen ></iframe> 
+	                             </td> 
+	                             <ng-template #falsyTemplate>
+								 	<span class="glyphicon glyphicon-expand gi-4x" (click)="onClicked(game)"></span>
+								 </ng-template>
+	                
+	                        </tr>
+
+	                    </tbody>
+	                </table>
+	            	<div *ngIf = "checked"> 
+						<iframe width=600 height=397 frameborder=0 [src]="getcurrent() | safe"></iframe> 
+					</div>
+
+	            </div>
+
+	        </div>   
+	    </div>
+	</div>
+
+
+ </body>
+
+
+
+
+

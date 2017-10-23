@@ -1,50 +1,63 @@
 # ChessDataStudy
-<div>
-  A unique chess database interface that showcases
+
+
+# ChessDataStudy
+
+A unique chess database interface that showcases
   games played on the professional level. Integrates embedded chess
   analysis boards leveraging the Lichess API. A detail view showcasing
   selected games with greater spotlight. Utilizes the
   DjangoRestFramework to transform the Django database into Angular
   accessible JSON format.
-</div>
 
-<h2> To locally host this website: </h3>
-<h3>
-  This project is written using Angular CLI version 1.49 and Django version 1.11, so it is recommended to download these versions. 
-<h3> 
-<h5>
-  In the client directory, type:
-<h5>
-<h5>
-  npm install -g @angular/cli@latest 
-</h5>
-<h5>
-  npm install
-</h5>
-<h5>
-  to create the Angular application. 
-</h5>
-<h5>
-  Once this is done, cd into src of the backend directory, and then type:
-</h5>
-<h5>
-  django manage.py makemigrations
-</h5>
-<h5>
-  django manage.py migrate
-</h5>
-<h5>
-  django manage.py createsuperuser (provide information to create an admin user)
-</h5>
-<h5>
-  django managepy runserver
-</h5>
-<h5>
-  The project can now be viewed in http://127.0.0.1:8000/. 
-</h5>
+## Getting Started
+Clone or download the repository
+Install Angular CLI version 1.49 and Django version 1.11
+### Prerequisites
+Must need
 
 
-  To modify or update the client and show changes, in the client directory type:
+### Installing
+
+Open the folder in a terminal window
+```
+npm install -g @angular/cli@latest 
+npm install 
+cd client
+npm install
 ng build --prod --output-path "path to a file called ang inside the static folder of the backend" --watch --output-hash none
+```
+
+And repeat
+
+```
+cd backend
+cd src 
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser (provide user information)
+python manage.py runserver
+```
+
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Django](https://www.djangoproject.com/) - The back-end web framework used
+* [Angular2](https://angular.io/docs) - The front-end web framework used
+* [Bootstrap](http://getbootstrap.com/docs/4.0/getting-started/introduction/) - Framework for creating responsive layouts
+
+
+## Authors
+
+* **Sam Lee** - *Initial work* - [Sammyuel](https://github.com/Sammyuel)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 

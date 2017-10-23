@@ -13,8 +13,6 @@ A unique chess database interface that showcases
 ## Getting Started
 Clone or download the repository
 Install Angular CLI version 1.49 and Django version 1.11
-### Prerequisites
-Must need
 
 
 ### Installing

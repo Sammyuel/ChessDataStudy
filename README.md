@@ -2,7 +2,7 @@
 # ChessDataStudy Angular2 + Django
 
 A unique chess database interface that showcases
-  games played on the professional level. Integrates embedded chess
+  games played on the professional level, with full server side search functionality. Integrates embedded chess
   analysis boards leveraging the Lichess API. A detail view showcasing
   selected games with greater spotlight. Utilizes the
   DjangoRestFramework to transform the Django database into Angular

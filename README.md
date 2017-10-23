@@ -3,9 +3,9 @@
 
 A unique chess database interface that showcases
   games played on the professional level, with full server side search functionality. Integrates embedded chess
-  analysis boards leveraging the Lichess API. Allows navigation to a games detail view for greater spotlight, including an embeded analysis video. Utilizes the
+  analysis boards for each game in the database leveraging the Lichess API. Allows navigation to a games detail view for greater spotlight, including an embeded analysis video. Utilizes the
   DjangoRestFramework to transform the Django database into Angular
-  accessible JSON format.
+  accessible JSON format. 
 
 ## Getting Started
 Clone or download the repository

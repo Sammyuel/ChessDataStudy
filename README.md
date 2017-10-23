@@ -45,7 +45,7 @@ python manage.py runserver
 
 ## Authors
 
-* **Sam Lee** - *Initial work* - [Sammyuel](https://github.com/Sammyuel)
+* **Sam Lee** - *Personal projectk* - [Sammyuel](https://github.com/Sammyuel)
 
 
 ## License

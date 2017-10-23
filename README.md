@@ -1,5 +1,5 @@
 
-# ChessDataStudy
+# ChessDataStudy Angular2 + Django
 
 A unique chess database interface that showcases
   games played on the professional level. Integrates embedded chess

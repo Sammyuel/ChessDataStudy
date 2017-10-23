@@ -8,10 +8,14 @@
   accessible JSON format.
 </div>
 
-<h3> To locally host this website: </h3>
-<div>
+<h2> To locally host this website: </h3>
+<h3>
   This project is written using Angular CLI version 1.49 and Django version 1.11, so it is recommended to download these versions. 
+<h3> 
+<h5>
   In the client directory, type:
+<h5>
+<body>
   npm install -g @angular/cli@latest 
   npm install 
   to create the Angular application. 
@@ -22,7 +26,7 @@
   django managepy runserver
   The project can now be viewed in http://127.0.0.1:8000/. 
   To modify or update the client and show changes, in the client directory type:
-</div>
+</body>
 
 ng build --prod --output-path "path to a file called ang inside the static folder of the backend" --watch --output-hash none
 
